@@ -2,6 +2,11 @@
 
 A hands-on project for learning LLM engineering best practices and development workflows. This project includes both Python and JavaScript implementations of various AI/LLM applications and experiments.
 
+## Quick Navigation
+
+- [Python Setup Instructions](#python-setup-instructions)
+- [JavaScript Setup Instructions](#javascriptnodejs-setup-instructions)
+
 ## Project Structure
 
 - `py/` - Python implementations using Jupyter notebooks
