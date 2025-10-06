@@ -68,3 +68,16 @@ logs/
 website_summaries/
 output/
 summaries/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+
+# JavaScript/TypeScript
+*.tsbuildinfo
+.nyc_output
+coverage/
