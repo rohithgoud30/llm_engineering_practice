@@ -95,32 +95,6 @@ jupyter lab
 3. Test the API connection
 4. Experiment with different prompts and models
 
-## Troubleshooting
-
-### Common Issues
-
-1. **Environment Creation Fails**
-
-   ```bash
-   # Update conda
-   conda update conda
-   ```
-
-2. **Import Errors**
-
-   - Make sure the environment is activated
-   - Restart the Jupyter kernel after activating the environment
-
-3. **API Key Issues**
-
-   - Ensure your `.env` file is in the correct directory
-   - Check that there are no extra spaces in the API key
-
-4. **Platform-Specific Issues**
-   - **Windows**: Use PowerShell or Command Prompt as Administrator if needed
-   - **macOS M1/M2**: Use the arm64 version of Miniforge/Miniconda
-   - **Linux**: Ensure you have the correct architecture version (x86_64 or aarch64)
-
 ## Contributing
 
 This is a practice project for LLM engineering skills. Feel free to experiment and enhance the examples.
