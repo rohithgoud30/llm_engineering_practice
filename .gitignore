@@ -34,6 +34,10 @@ env/
 ENV/
 env.bak/
 venv.bak/
+.venv/
+
+# UV
+.uv_cache/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
@@ -68,6 +72,9 @@ logs/
 website_summaries/
 output/
 summaries/
+
+# Gradio
+.gradio/
 
 # Node.js
 node_modules/
