@@ -16,7 +16,15 @@ A hands-on project for learning LLM engineering best practices and development w
 
 ### 1. Install UV
 
-UV is a fast Python package installer and resolver. Install it with:
+UV is a fast Python package installer and resolver. Choose one of the following installation methods:
+
+#### Option 1: Homebrew (macOS and Linux)
+
+```bash
+brew install uv
+```
+
+#### Option 2: Official Installer Script
 
 ```bash
 # macOS and Linux
@@ -24,8 +32,11 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Windows (PowerShell)
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
 
-# Or with pip (slower)
+#### Option 3: pip (slower)
+
+```bash
 pip install uv
 ```
 
