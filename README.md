@@ -14,63 +14,32 @@ A hands-on project for learning LLM engineering best practices and development w
 
 ## Python Setup Instructions
 
-### 1. Install Conda/Mamba
+### 1. Install UV
 
-Choose one of the following options:
-
-#### Option 1: Miniconda (Recommended for beginners)
+UV is a fast Python package installer and resolver. Install it with:
 
 ```bash
-# Windows
-winget install --id Anaconda.Miniconda3
+# macOS and Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# macOS
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-bash Miniconda3-latest-MacOSX-x86_64.sh
+# Windows (PowerShell)
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 
-# Linux (x86_64)
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh
-
-# Linux (aarch64)
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
-bash Miniconda3-latest-Linux-aarch64.sh
-```
-
-#### Option 2: Miniforge (Faster alternative)
-
-```bash
-# Windows
-winget install --id conda-forge.miniforge
-
-# macOS (Intel)
-curl -O https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-x86_64.sh
-bash Miniforge3-MacOSX-x86_64.sh
-
-# macOS (Apple Silicon M1/M2)
-curl -O https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
-bash Miniforge3-MacOSX-arm64.sh
-
-# Linux (x86_64)
-curl -O https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
-bash Miniforge3-Linux-x86_64.sh
-
-# Linux (aarch64)
-curl -O https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
-bash Miniforge3-Linux-aarch64.sh
+# Or with pip (slower)
+pip install uv
 ```
 
 ### 2. Create and Activate Python Environment
 
 ```bash
-# Navigate to the Python directory
-cd py
+# Navigate to the project root directory
+cd /path/to/llm_engineering_practice
 
 # Create environment
-conda env create -f environment.yml
+uv sync
 
 # Activate environment
-conda activate llms
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
 ### 3. Set Up Environment Variables for Python
@@ -157,6 +126,8 @@ Available notebooks:
 
 - `1. WebsiteSummarizer.ipynb` - AI application for content summarization using OpenAI API
 - `2. WebsiteSummarizer(Local LLM).ipynb` - AI application using local LLM for content processing
+- `3. OpenAI_Options_Practice.ipynb` - Practice notebook for exploring OpenAI API options and parameters
+- `4. TokenUsage.ipynb` - Notebook for understanding and tracking token usage with OpenAI API
 
 ### JavaScript Applications
 
