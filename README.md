@@ -142,6 +142,7 @@ Available notebooks:
 - `5. ConversationBetweenChatbots.ipynb` - Implementation of conversational AI between multiple chatbots
 - `6. GradioUI.ipynb` - Interactive web interface for AI applications using Gradio
 - `7. CompanyBrochureGenerator.ipynb` - AI-powered tool for generating company marketing brochures
+- `8. ConversationalAI.ipynb` - Advanced conversational AI implementation with dialogue management
 
 ### Python Scripts
 
