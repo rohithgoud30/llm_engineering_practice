@@ -139,6 +139,13 @@ Available notebooks:
 - `2. WebsiteSummarizer(Local LLM).ipynb` - AI application using local LLM for content processing
 - `3. OpenAI_Options_Practice.ipynb` - Practice notebook for exploring OpenAI API options and parameters
 - `4. TokenUsage.ipynb` - Notebook for understanding and tracking token usage with OpenAI API
+- `5. ConversationBetweenChatbots.ipynb` - Implementation of conversational AI between multiple chatbots
+- `6. Gradio_UI.ipynb` - Interactive web interface for AI applications using Gradio
+- `7. Company_Brochure_Generator.ipynb` - AI-powered tool for generating company marketing brochures
+
+### Python Scripts
+
+- `scraper.py` - Web scraping utility for extracting content from websites
 
 ### JavaScript Applications
 
