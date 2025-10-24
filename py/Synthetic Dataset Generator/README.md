@@ -30,19 +30,74 @@ pip install -r requirements.txt
 **Requirements file (`requirements.txt`):**
 ```txt
 gradio>=4.0.0
-anthropic>=0.25.0
+openai>=1.0.0
 pandas>=1.5.0
 python-dotenv>=1.0.0
-httpx==0.27.2
+httpx>=0.27.2
 ```
 
-### 4️⃣ Set Up API Key
+**Supported Providers:**
+- **Z AI** - GLM-4.5, GLM-4.6, GLM-4.5-Air
+- **Gemini** - gemini-2.5-flash-latest, gemini-2.5-flash-lite
+- **OpenRouter** - deepseek/deepseek-chat-v3.1:free, moonshotai/kimi-k2:free, openai/gpt-oss-20b:free
+- **Ollama** - granite4:tiny-h, gpt-oss:120b-cloud, qwen3:latest (local)
 
-Create a `.env` file in the project root:
+### 4️⃣ Set Up API Keys
+
+Create a `.env` file in the project root with your API keys:
 
 ```bash
 # .env
-ANTHROPIC_API_KEY=your_api_key_here
+# Z AI Provider
+Z_AI_API_KEY=your_z_ai_api_key_here
+
+# Google Gemini Provider
+GOOGLE_API_KEY=your_google_api_key_here
+
+# OpenRouter Provider
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+```
+
+**Provider Setup Guide:**
+
+#### Z AI
+1. Visit [z.ai](https://z.ai)
+2. Sign up for an account
+3. Get your API key from the dashboard
+4. Add to `.env` as `Z_AI_API_KEY`
+
+#### Google Gemini
+1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Create a new API key
+3. Add to `.env` as `GOOGLE_API_KEY`
+
+#### OpenRouter
+1. Visit [OpenRouter.ai](https://openrouter.ai)
+2. Sign up and get API key
+3. Add to `.env` as `OPENROUTER_API_KEY`
+
+#### Ollama (Local)
+- No API key needed
+- Ensure Ollama is running locally on `http://localhost:11434`
+- Install models with: `ollama pull granite4:tiny-h`
+
+### 5️⃣ Configure Models (Optional)
+
+Edit `models_config.json` to customize available models:
+
+```json
+{
+  "providers": {
+    "Z AI": {
+      "models": ["GLM-4.5", "GLM-4.6", "GLM-4.5-Air"],
+      "default": "GLM-4.5-Air"
+    },
+    "Gemini": {
+      "models": ["gemini-2.5-flash-latest", "gemini-2.5-flash-lite"],
+      "default": "gemini-2.5-flash-latest"
+    }
+  }
+}
 ```
 
 > **Note**: Never commit your `.env` file to version control. Add it to `.gitignore`.
