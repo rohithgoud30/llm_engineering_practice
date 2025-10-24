@@ -1,5 +1,7 @@
 # 🤖 Synthetic Dataset Generator
+
 ## AI-Powered Synthetic Data Generation with Claude 3 Haiku
+
 ## 📥 Installation
 
 ### 1️⃣ Clone the Repository
@@ -28,6 +30,7 @@ pip install -r requirements.txt
 ```
 
 **Requirements file (`requirements.txt`):**
+
 ```txt
 gradio>=4.0.0
 openai>=1.0.0
@@ -37,6 +40,7 @@ httpx>=0.27.2
 ```
 
 **Supported Providers:**
+
 - **Z AI** - GLM-4.5, GLM-4.6, GLM-4.5-Air
 - **Gemini** - gemini-2.5-flash-latest, gemini-2.5-flash-lite
 - **OpenRouter** - deepseek/deepseek-chat-v3.1:free, moonshotai/kimi-k2:free, openai/gpt-oss-20b:free
@@ -61,22 +65,26 @@ OPENROUTER_API_KEY=your_openrouter_api_key_here
 **Provider Setup Guide:**
 
 #### Z AI
+
 1. Visit [z.ai](https://z.ai)
 2. Sign up for an account
 3. Get your API key from the dashboard
 4. Add to `.env` as `Z_AI_API_KEY`
 
 #### Google Gemini
+
 1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
 2. Create a new API key
 3. Add to `.env` as `GOOGLE_API_KEY`
 
 #### OpenRouter
+
 1. Visit [OpenRouter.ai](https://openrouter.ai)
 2. Sign up and get API key
 3. Add to `.env` as `OPENROUTER_API_KEY`
 
 #### Ollama (Local)
+
 - No API key needed
 - Ensure Ollama is running locally on `http://localhost:11434`
 - Install models with: `ollama pull granite4:tiny-h`
@@ -128,6 +136,7 @@ The Gradio interface will launch at `http://localhost:7860`
 ## 📝 Example Schemas
 
 ### 👥 Customer Data
+
 ```
 Generate customer data with:
 - customer_id (format: CUST-XXXX)
@@ -141,6 +150,7 @@ Generate customer data with:
 ```
 
 ### 👨‍💼 Employee Records
+
 ```
 Generate employee records with:
 - employee_id (format: EMP001, EMP002, etc.)
@@ -153,6 +163,7 @@ Generate employee records with:
 ```
 
 ### 🛒 E-commerce Products
+
 ```
 Generate e-commerce product data with:
 - product_id (format: PRD-XXXX)
@@ -172,6 +183,7 @@ Generate e-commerce product data with:
 ### Batch Generation
 
 For datasets larger than 50 records, the tool automatically:
+
 - Splits generation into batches of 50
 - Combines results into a single dataset
 - Prevents API timeout issues
@@ -206,6 +218,7 @@ Then restart your Python kernel/terminal.
 ### ❌ API Key Not Found
 
 **Solutions**:
+
 1. Check `.env` file exists in project root
 2. Verify `ANTHROPIC_API_KEY` is spelled correctly
 3. Ensure no extra spaces in the `.env` file
@@ -214,6 +227,7 @@ Then restart your Python kernel/terminal.
 ### ❌ JSON Parsing Error
 
 **Solutions**:
+
 1. Make your schema description more specific
 2. Add an example format
 3. Reduce the number of records per batch
@@ -222,6 +236,7 @@ Then restart your Python kernel/terminal.
 ### ❌ Rate Limit Errors
 
 **Solutions**:
+
 1. Reduce batch size in code (change `batch_size=50` to `batch_size=20`)
 2. Add delays between batches
 3. Upgrade your Anthropic API plan
@@ -231,9 +246,11 @@ Then restart your Python kernel/terminal.
 ## 📊 Output Format
 
 ### DataFrame Preview
+
 View generated data directly in the browser with scrollable table.
 
 ### CSV Download
+
 - Automatic CSV generation
 - Proper encoding (UTF-8)
 - No index column
@@ -267,13 +284,12 @@ View generated data directly in the browser with scrollable table.
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
-2. Create your feature branch 
-3. Commit your changes 
-4. Push to the branch 
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
 5. Open a Pull Request
 
 ---
-
 
 ## 🙏 Acknowledgments
 
