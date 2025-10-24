@@ -1,0 +1,21 @@
+{
+  "providers": {
+    "Z AI": {
+      "models": ["GLM-4.5", "GLM-4.6", "GLM-4.5-Air"],
+      "default": "GLM-4.5-Air"
+    },
+    "Gemini": {
+      "models": ["gemini-2.5-flash-latest", "gemini-2.5-flash-lite"],
+      "default": "gemini-2.5-flash-latest"
+    },
+    "OpenRouter": {
+      "models": ["deepseek/deepseek-chat-v3.1:free", "moonshotai/kimi-k2:free", "openai/gpt-oss-20b:free"],
+      "default": "openai/gpt-oss-20b:free"
+    },
+    "Ollama": {
+      "models": ["granite4:tiny-h", "gpt-oss:120b-cloud", "qwen3:latest"],
+      "default": "gpt-oss:120b-cloud"
+    }
+  }
+}
+
