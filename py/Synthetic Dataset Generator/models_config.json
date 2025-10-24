@@ -6,16 +6,19 @@
     },
     "Gemini": {
       "models": ["gemini-2.5-flash-latest", "gemini-2.5-flash-lite"],
-      "default": "gemini-2.5-flash-latest"
+      "default": "gemini-2.5-flash-lite"
     },
     "OpenRouter": {
-      "models": ["deepseek/deepseek-chat-v3.1:free", "moonshotai/kimi-k2:free", "openai/gpt-oss-20b:free"],
-      "default": "openai/gpt-oss-20b:free"
+      "models": [
+        "deepseek/deepseek-chat-v3.1:free",
+        "moonshotai/kimi-k2:free",
+        "openai/gpt-oss-20b:free"
+      ],
+      "default": "moonshotai/kimi-k2:free"
     },
     "Ollama": {
-      "models": ["granite4:tiny-h", "gpt-oss:120b-cloud", "qwen3:latest"],
+      "models": ["gpt-oss:120b-cloud"],
       "default": "gpt-oss:120b-cloud"
     }
   }
 }
-
